@@ -4,18 +4,20 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Profile
 from .serializers import ProfileSerializer
+from drf_pp5_api.permissions import IsOwnerOrReadOnly
 
 
 class ProfileList(APIView):
-    def get(self, request):
+    def get(self,request):
         profiles = Profile.objects.all()
-        serializer = ProfileSerializer(profiles, many=True)
+        serializer = ProfileSerializer(profiles, many=True, context={'request': request})
         return Response(serializer.data)
 
 
 class ProfileDetail(APIView):
     serializer_class = ProfileSerializer
-     
+    permission_classes = [IsOwnerOrReadOnly]
+
     def get_object(self, pk):
         try:
             profile = Profile.objects.get(pk=pk)
