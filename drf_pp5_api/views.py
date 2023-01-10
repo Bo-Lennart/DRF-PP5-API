@@ -7,7 +7,7 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response({
-        "message": "Welcome to my first API"
+        "message": "It works! Connected."
     })
 
 
