@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+
 import os
 import dj_database_url
 
@@ -63,7 +64,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    'pp5-content-page-api.herokuapp.com',
+    'pp5-api-bo.herokuapp.com',
     'localhost',
     ]
 
