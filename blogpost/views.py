@@ -10,21 +10,18 @@ from django.db.models import Count
 
 class BlogPostList(generics.ListCreateAPIView):
     serializer_class = BlogPostSerializer
-    permission_classes = [
-        permissions.IsAuthenticatedOrReadOnly
-    ]
+    permission_classes = [IsOwnerOrReadOnly]
     queryset = BlogPost.objects.annotate(
         likes_count=Count('likes', distinct=True),
         bookmarks_count=Count('bookmark', distinct=True)
     ).order_by('-created_at')
-    filter_backends = [
-        filters.OrderingFilter
-    ]
+
     ordering_fields = [
         'likes_count',
-        'bookmarks_count',
+        'comments_count',
         'likes__created_at',
     ]
+
     
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
@@ -46,7 +43,9 @@ class BlogPostList(generics.ListCreateAPIView):
         return Response(
             serializer.errors, status=status.HTTP_400_BAD_REQUEST
         )
-
+    
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
 
 class BlogPostDetail(generics.RetrieveUpdateDestroyAPIView):
     """
