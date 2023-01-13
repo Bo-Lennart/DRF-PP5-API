@@ -1,17 +1,33 @@
 from django.http import Http404
-from rest_framework import status, permissions
+from rest_framework import status, permissions, generics, filters
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import BlogPost
 from .serializers import BlogPostSerializer
 from drf_pp5_api.permissions import IsOwnerOrReadOnly
+from django.db.models import Count
 
 
-class BlogPostList(APIView):
+class BlogPostList(generics.ListCreateAPIView):
     serializer_class = BlogPostSerializer
     permission_classes = [
         permissions.IsAuthenticatedOrReadOnly
     ]
+    queryset = BlogPost.objects.annotate(
+        likes_count=Count('likes', distinct=True),
+        bookmarks_count=Count('bookmark', distinct=True)
+    ).order_by('-created_at')
+    filter_backends = [
+        filters.OrderingFilter
+    ]
+    ordering_fields = [
+        'likes_count',
+        'bookmarks_count',
+        'likes__created_at',
+    ]
+    
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
 
     def get(self, request):
         posts = BlogPost.objects.all()
@@ -32,40 +48,13 @@ class BlogPostList(APIView):
         )
 
 
-class BlogPostDetail(APIView):
-    permission_classes = [IsOwnerOrReadOnly]
+class BlogPostDetail(generics.RetrieveUpdateDestroyAPIView):
+    """
+    Retrieve a post and edit or delete it if you own it.
+    """
     serializer_class = BlogPostSerializer
-
-    def get_object(self, pk):
-        try:
-            post = BlogPost.objects.get(pk=pk)
-            self.check_object_permissions(self.request, post)
-            return post
-        except BlogPost.DoesNotExist:
-            raise Http404 
-
-    def get(self, request, pk):
-        post = self.get_object(pk)
-        serializer = BlogPostSerializer(
-            post, context={'request': request}
-        )
-        return Response(serializer.data)
-
-    def put(self, request, pk):
-        post = self.get_object(pk)
-        serializer = BlogPostSerializer(
-            post, data=request.data, context={'request': request}
-        )
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(
-            serializer.errors, statuts=status.HTTP_400_BAD_REQUEST
-        )
-
-    def delete(self, request, pk):
-        post = self.get_object(pk)
-        post.delete()
-        return Response(
-            status=status.HTTP_204_NO_CONTENT
-        )
+    permission_classes = [IsOwnerOrReadOnly]
+    queryset = BlogPost.objects.annotate(
+        likes_count=Count('likes', distinct=True),
+        bookmarks_count=Count('bookmark', distinct=True)
+    ).order_by('-created_at')
