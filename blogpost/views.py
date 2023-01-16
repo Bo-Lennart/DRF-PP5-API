@@ -18,7 +18,7 @@ class BlogPostList(generics.ListCreateAPIView):
 
     ordering_fields = [
         'likes_count',
-        'comments_count',
+        'bookmarks_count',
         'likes__created_at',
     ]
 
