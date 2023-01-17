@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Contact
+from .serializer import ContactSerializer
 
-# Create your views here.
+class ContactDetail(generics.ListCreateAPIView);
+    
