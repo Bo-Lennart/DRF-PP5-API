@@ -10,3 +10,6 @@ class Contact(models.model):
 
     class Meta:
         ordering = ['-created_on']
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
