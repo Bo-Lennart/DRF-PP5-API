@@ -29,5 +29,6 @@ urlpatterns = [
     path('', include('profiles.urls')),
     path('', include('blogpost.urls')),
     path('', include('like.urls')),
-    path('', include('bookmark.urls'))
+    path('', include('bookmark.urls')),
+    path('', include('contact.urls')),
 ]
