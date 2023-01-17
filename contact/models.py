@@ -8,4 +8,5 @@ class Contact(models.model):
     message: models.Charfield(max_length=50)
     created: models.DateTimeField(auto_now_add=True)
 
-    
+    class Meta:
+        ordering = ['-created_on']
