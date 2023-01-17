@@ -3,13 +3,13 @@ from django.db import models
 
 class Contact(models.Model):
     first_name = models.CharField(max_length=50)
-    last_name = models.Charfield(max_length=50)
-    email_adress = models.Charfield(max_length=50)
-    message = models.Charfield(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email_adress = models.CharField(max_length=50)
+    message = models.CharField(max_length=50)
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['-created']
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
