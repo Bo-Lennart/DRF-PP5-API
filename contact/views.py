@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Contact
-from .serializer import ContactSerializers
+from .serializers import ContactSerializers
+from rest_framework.views import APIView
+from rest_framework import generics
 
 
 class ContactDetail(generics.ListCreateAPIView):   

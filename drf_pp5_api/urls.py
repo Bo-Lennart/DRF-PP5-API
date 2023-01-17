@@ -30,5 +30,5 @@ urlpatterns = [
     path('', include('blogpost.urls')),
     path('', include('like.urls')),
     path('', include('bookmark.urls')),
-    path('', include('contact.urls')),
+    path('', include('contact.urls'))
 ]
