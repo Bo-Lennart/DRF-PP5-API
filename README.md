@@ -13,3 +13,27 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
 * BackEnd Repo - [LINK](https://github.com/Bo-Lennart/DRF-PP5-API)
 
 * FrontEnd Repo - [LINK](https://github.com/Bo-Lennart/pp5-content-platform)
+
+## Table of Contents
+
+- [Database Scheme](#database-scheme)
+- [Testing](#testing)
+- [Bugs](#bugs)
+    - [Resolved](#resolved)
+    - [Known Bugs](#)
+- [Technologies Used](#technologies-used)
+    - [Modules](#modules)
+    - [Languages](#languages)
+    - [Libraries](#libraries)
+    - [Frameworks](#frameworks)
+    - [Platforms](#platforms)
+    - [Services](#services)
+    - [Resources](#resources)
+- [Project Setup](#project-setup)
+- [Deployment](#deployment)
+    - [JSON web tokens](#json-web-tokens)
+    - [Prepare API for deployment for Heroku](#prepare-api-for-deployment-for-heroku)
+    - [Deploy to Heroku](#deploy-to-heroku)
+    - [dj-rest-auth](#dj-rest-auth)
+- [Credits](#credits)
+- [Media](#media)
