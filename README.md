@@ -68,6 +68,10 @@ Within the readme documentation of the Front-end you can have an insight of a de
 * Pillow
 
 # Deployment
+1. Create GitHub Repository
+2. Create a new app on Heroku
+3. Via the resources tab on heroku, add postgres.
+4. Start GitPod and install the packages you desire. For me I ran the following via the "pip install" command: 
 
 ## JSON Webtokens
 
