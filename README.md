@@ -39,4 +39,7 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
 
 All user stories can be accessed via the KanBan alike board from the "projects tab" on github.
 * Front-End: [LINK](https://github.com/users/Bo-Lennart/projects/10)
+
+Within the readme documentation of the Front-end you can have an insight of a detailed view of the agile methodology of this project. [LINK](https://github.com/Bo-Lennart/pp5-content-platform)
+
 * Back-End: [LINK](https://github.com/users/Bo-Lennart/projects/8/views/1)
