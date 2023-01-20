@@ -62,6 +62,13 @@ Running the pep8 validator extension within gitpod showed a number of errors and
     * Ensure that bookmarks fetch the correct owner data and post data is stored.
 
 ## Bugs
+* During the testing phase of the API I have not come across any bugs. However I'm humble to the fact that there could be functionalities that I have not tested but all user stories and C.R.U.D features worked by the time I tested them. 
+
+* When I built the API a lot of bugs happened because of type errors and simply cause I had misunderstood things from the code along project. Through google and online tutorials on youtube I managed to build a better understanding and find my way through the bugs.
+
+* By the time I had deployed the API to Heroku the API responded as desired but once I started working on the bookmark and like feature on the React fron end part, I realized I had done something wrong. The issue was that I had not written them as fields in the view and serializer of the post and therefore the API could not serve that request. This is now solved.
+
+* Another bug that happened, which took a lot of time for me to realize was when I had deployed the API and restarted the Gitpod IDE for the front end, no data was fetched. I though I had done something wrong in the code, searched and searched.. Went into the API code and looked for any type error. Eventually I went on to the code along project of Moments by C.I and saw the comment of the "config var bug" in heroku settings and that the local server changes the URL sometimes. After I had updated the config var "CLIENT_ORIGIN_DEV" key, it worked. This bug occured several times during the development process. 
 
 # Technologies Used
 
