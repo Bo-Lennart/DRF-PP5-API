@@ -41,6 +41,8 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 # Database Schema
 
+![database schema](assets/screenshots/database_schema.png)
+
 # Testing
 
 ## Validators
