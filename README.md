@@ -136,6 +136,9 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 ![procfile](assets/screenshots/procfile.png)
 
+22. pip3 freeze so your 'requirements.txt' file is up to date. 
+    * commit and push all changes to your GitHub.
+    * Navigate to Heroku, connect your repo to your Heroku app and click Deploy branch.
 
 ## JSON Webtokens
 
