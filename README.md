@@ -87,7 +87,12 @@ Within the readme documentation of the Front-end you can have an insight of a de
     * Key: CLIENT_ORIGIN_DEV - Value: The HTTPS adress to your local server when you preview your React app in the dev environment.
 8. Create the env.py file and add the following variables to it:
 
-![requirements.txt file](assets/screenshots/envpy_file.png)
+![envpy file](assets/screenshots/envpy_file.png)
+
+9. Make sure that all you packages are added inside the settinig.py file at the INSTALLED_APPS section. See the screen shot below:
+
+![installed app in settings file](assets/screenshots/installed_apps_settings.png)
+
 ## JSON Webtokens
 
 ## Prepare API for deployment
