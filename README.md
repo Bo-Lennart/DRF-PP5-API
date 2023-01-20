@@ -109,8 +109,11 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 14. Set render default to JSON
 
-![set Id](assets/screenshots/json_render.png)
+![jsom render](assets/screenshots/json_render.png)
 
+15. Beneath the REST_FRAMEWORK section, add the following code:
+
+![set jwt auth](assets/screenshots/set_jwt_auth.png)
 
 ## JSON Webtokens
 
