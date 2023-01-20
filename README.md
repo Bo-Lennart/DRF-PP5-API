@@ -17,7 +17,7 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
 ## Table of Contents
 
 - [User Stories](#user-stories)
-- [Database](#database)
+- [Database Schema](#database-schema)
 - [Testing](#Testing)
     - [Validators](#validators)
     - [Bugs](#bugs)
@@ -34,3 +34,9 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
 - [Credits](#credits)
     - [content](#content)
     - [Media](#media)
+
+# User Stories
+
+All user stories can be accessed via the KanBan alike board from the "projects tab" on github.
+* Front-End: [LINK](https://github.com/users/Bo-Lennart/projects/10)
+* Back-End: [LINK](https://github.com/users/Bo-Lennart/projects/8/views/1)
