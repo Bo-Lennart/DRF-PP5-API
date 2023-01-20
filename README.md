@@ -115,6 +115,15 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 ![set jwt auth](assets/screenshots/set_jwt_auth.png)
 
+16. Set DEBUG = 'DEV inside the os.environment.
+17. Update the database variable to the following: 
+
+![database variable](assets/screenshots/database_variable.png)
+
+18. Set allowed hosts to your Heroku app and local:
+
+![set jwt auth](assets/screenshots/allowed_hosts.png)
+
 ## JSON Webtokens
 
 ## Prepare API for deployment
