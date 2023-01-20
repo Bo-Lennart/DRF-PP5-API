@@ -107,6 +107,10 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 ![set pagination](assets/screenshots/pagination.png)
 
+14. Set render default to JSON
+
+![set Id](assets/screenshots/json_render.png)
+
 
 ## JSON Webtokens
 
