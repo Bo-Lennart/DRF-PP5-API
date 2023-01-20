@@ -1,6 +1,6 @@
 # Dagoy - Content Sharing Platform (API)
 
-Dagoy is a content platform for users to share their content. The concept is that you cannot follow any users, to keep content democracy on a high level and nobody gets to ride on the "high follower number bluff = quality".. What you can do on Dagoy is bookmark posts, filter them by category and also like posts if you appreciate a users content. 
+Dagoy is a content platform for users to share their content. The concept is that you cannot follow any users, to keep content democracy on a high level and nobody gets to ride on the "high follower number bluff = quality".. What you can do on Dagoy is bookmark posts, filter them by category, and also like posts if you appreciate a users content.
 
 Each user has access to their own profile once they are signed in where they can create posts, see all their bookmarks, edit their profile image and password.
 
@@ -47,7 +47,7 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 ## Validators
 
-Running the pep8 validator extension within gitpod showed a number of errors and warnings. Among these where trailing white spaces, missed smicolons and new line after end of code errors. All of these have been resolved and the only warnings left are the ones shown in the settings.py file and .gitpod.yml file.
+Running the pep8 validator extension within gitpod showed a number of errors and warnings. Among these where trailing white spaces, missed semicolons, and new line after end-of code errors. All of these have been resolved and the only warnings left are the ones shown in the settings.py file and .gitpod.yml file.
 
 ![database schema](assets/screenshots/pep8.png)
 
@@ -56,19 +56,19 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 * All url paths have been tested manually and verified to work on the deployed page without any errors. They display their intentioned data.
 
 * C.R.U.D functionality has been tested on blogposts, likes, bookmarks and the profile features of adding and removing profile picture as well as changing password.
-    * Create new posts, updated and deleted has worked, change category, image, title and content.
-    * Create like, check it's info and data as well as removed that like.
-    * Create bookmark and remove bookmark with correct data stored.
-    * Ensure that bookmarks fetch the correct owner data and post data is stored.
+* Create new posts, updated and deleted has worked; change category, image, title and content.
+* Create like, check it's info and data as well as removed that like.
+* Create bookmark and remove bookmark with correct data stored.
+* Ensure that bookmarks fetch the correct owner data and post data is stored.
 
 ## Bugs
-* During the testing phase of the API I have not come across any bugs. However I'm humble to the fact that there could be functionalities that I have not tested but all user stories and C.R.U.D features worked by the time I tested them. 
+* During the testing phase of the API I have not come across any bugs. However, I'm humbled by the fact that there could be functionalities that I have not tested, but all user stories and C.R.U.D features worked by the time I tested them.
 
-* When I built the API a lot of bugs happened because of type errors and simply cause I had misunderstood things from the code along project. Through google and online tutorials on youtube I managed to build a better understanding and find my way through the bugs.
+* When I built the API a lot of bugs happened because of type errors and simply because I had misunderstood things from the code along project. Through google and online tutorials on youtube I managed to build a better understanding and find my way through the bugs.
 
-* By the time I had deployed the API to Heroku the API responded as desired but once I started working on the bookmark and like feature on the React fron end part, I realized I had done something wrong. The issue was that I had not written them as fields in the view and serializer of the post and therefore the API could not serve that request. This is now solved.
+* By the time I had deployed the API to Heroku, the API responded as desired but once I started working on the bookmark and like feature on the React fron end part, I realized I had done something wrong. The issue was that I had not written them as fields in the view and serializer of the post, and therefore the API could not serve that request. This is now solved.
 
-* Another bug that happened, which took a lot of time for me to realize was when I had deployed the API and restarted the Gitpod IDE for the front end, no data was fetched. I though I had done something wrong in the code, searched and searched.. Went into the API code and looked for any type error. Eventually I went on to the code along project of Moments by C.I and saw the comment of the "config var bug" in heroku settings and that the local server changes the URL sometimes. After I had updated the config var "CLIENT_ORIGIN_DEV" key, it worked. This bug occured several times during the development process. 
+* Another bug that happened, which took a lot of time for me to realize was when I had deployed the API and restarted the Gitpod IDE for the front end, no data was fetched. I though I had done something wrong in the code, searched, and searched.. Went into the API code and looked for any type errors. Eventually I went on to the code along project of Moments by C.I and saw the comment of the "config var bug" in heroku settings and that the local server changes the URL sometimes. After I had updated the config var "CLIENT_ORIGIN_DEV" key, it worked. This bug occurred several times during the development process.  
 
 # Technologies Used
 
@@ -86,10 +86,10 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 * Pages (to create the database schema)
 
 # Deployment
-1. Create GitHub Repository
+1. Create a GitHub Repository
 2. Create a new app on Heroku
 3. Via the resources tab on heroku, add postgres.
-4. Start GitPod and install the packages you desire. For me I ran the following via the "pip install" command: 
+4. Start GitPod and install the packages you desire. For me I ran the following via the "pip install" command:
 
 ![requirements.txt file](assets/screenshots/pip_packages.png)
 
@@ -162,13 +162,13 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 
 ## Content
 
-* This app has been created by following the step by step guide of C.Is DRF-API walkthrough project. 
-* Classes and functions are inspired of the project and additionally I have implemented my own two models.
-* The Profiles and Posts models have been customized so they matched my project idea. Additionally I've added a bookmark model and contact model with views and serializers too.
+* This app has been created by following the step-by step guide of C.Is DRF-API walkthrough project.
+* Classes and functions are inspired by the project and additionally I have implemented my own two models.
+* The Profiles and Posts models have been customized so they matched my project idea. Additionally, I've added a bookmark model and contact model with views and serializers, too.
 * Excellent mentorship by Martina Terlevic in advising me and assisting me with tips on how to get through the project efficiently. Great communication and provided resources.
 * For writing the readme I took inspiration from the following projects:
-    * [LINK](https://github.com/CluelessBiker/project5-drf-api#validator-testing)
-    * [LINK](https://github.com/cornishcoder1/pp5-backend-DRF-the-winding-path)
+* [LINK](https://github.com/CluelessBiker/project5-drf-api#validator-testing)
+* [LINK](https://github.com/cornishcoder1/pp5-backend-DRF-the-winding-path)
 
 ## Media
 
