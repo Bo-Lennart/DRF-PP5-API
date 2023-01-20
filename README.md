@@ -22,7 +22,6 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
     - [Validators](#validators)
     - [Bugs](#bugs)
 - [Technologies used](#technologies-used)
-    - [Modules](#modules)
     - [Languages](#languages)
     - [Libraries, Frameworks & Programs](#libraries-frameworks-&-programs)
 - [Deployment](#deployment)
@@ -50,8 +49,6 @@ Within the readme documentation of the Front-end you can have an insight of a de
 ## Bugs
 
 # Technologies Used
-
-## Modules
 
 ## Languages
 * Python
