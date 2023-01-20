@@ -99,9 +99,14 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 11. Set cloudinary storage and add the following variable into the statement.
 
-![import_database](assets/screenshots/cloudinary_storage_settings.png)
+![Storage settings](assets/screenshots/cloudinary_storage_settings.png)
 
-12. 
+12. Below the INSTALLED_APPS section, set the "site ID": ![set Id](assets/screenshots/site_id.png)
+
+13. Right below BASE_DIR, create the REST_FRAMEWORK and add the page pagination to improve the app loading efficency, pagination count and time/date format.
+
+![set pagination](assets/screenshots/pagination.png)
+
 
 ## JSON Webtokens
 
