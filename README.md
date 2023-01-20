@@ -144,4 +144,7 @@ Within the readme documentation of the Front-end you can have an insight of a de
 * Classes and functions are inspired of the project and additionally I have implemented my own two models.
 * The Profiles and Posts models have been customized so they matched my project idea. Additionally I've added a bookmark model and contact model with views and serializers too.
 * Excellent mentorship by Martina Terlevic in advising me and assisting me with tips on how to get through the project efficiently. Great communication and provided resources.
+
 ## Media
+
+* Default profile image and posts image has been taken from the C.I walkthrough project (DRF-API).
