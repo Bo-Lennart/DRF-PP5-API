@@ -76,6 +76,7 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 * Cors Headers
 * Cloudinary
 * Pillow
+* Pages (to create the database schema)
 
 # Deployment
 1. Create GitHub Repository
