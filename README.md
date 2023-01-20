@@ -24,7 +24,7 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
 - [Technologies used](#technologies-used)
     - [Modules](#modules)
     - [Languages](#languages)
-    - [Libraries](#libraries)
+    - [Libraries, Frameworks & Programs](#libraries-frameworks-&-programs)
     - [Frameworks](#frameworks)
 - [Deployment](#deployment)
     - [JSON Webtokens](#json-webtokens)
@@ -43,3 +43,37 @@ All user stories can be accessed via the KanBan alike board from the "projects t
 Within the readme documentation of the Front-end you can have an insight of a detailed view of the agile methodology of this project. [LINK](https://github.com/Bo-Lennart/pp5-content-platform)
 
 * Back-End: [LINK](https://github.com/users/Bo-Lennart/projects/8/views/1)
+
+# Database Schema
+
+# Testing
+
+## Validators
+
+## Bugs
+
+# Technologies Used
+
+## Modules
+
+## Languages
+* Python
+
+## Libraries, Frameworks & Programs
+
+## Frameworks
+
+# Deployment
+
+## JSON Webtokens
+
+## Prepare API for deployment
+
+## Deploy API to Heroku
+
+## dj-rest-auth bug fixes
+
+# Credits
+
+## Content
+## Media
