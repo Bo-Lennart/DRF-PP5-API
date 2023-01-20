@@ -75,6 +75,19 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 ![requirements.txt file](assets/screenshots/pip_packages.png)
 
+5. Create django project, command:
+- 'django-admin startproject project_name .'
+6. Go back to Heroku and navigate to the "settings tab" -> Add the following config vars:
+    * Key: SECRET_KEY - hidden
+    * Key: CLOUDINARY_URL - Value: cloudinary://hidden
+    * Key: DISABLE_COLLECTSTATIC - Value: 1
+    * ALLOWED_HOST - API-app-name.heroku.com
+7. Once you've set up the React app, go ahead and add the following config vars to the API heroku settings tab:
+    * Key: CLIENT_ORIGIN - Value: HTTPS adress to your deployed react heroku page.
+    * Key: CLIENT_ORIGIN_DEV - Value: The HTTPS adress to your local server when you preview your React app in the dev environment.
+8. Create the env.py file and add the following variables to it:
+
+![requirements.txt file](assets/screenshots/envpy_file.png)
 ## JSON Webtokens
 
 ## Prepare API for deployment
