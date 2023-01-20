@@ -52,6 +52,14 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 
 ## Manual Testing
 
+* All url paths have been tested manually and verified to work on the deployed page without any errors. They display their intentioned data.
+
+* C.R.U.D functionality has been tested on blogposts, likes, bookmarks and the profile features of adding and removing profile picture as well as changing password.
+    * Create new posts, updated and deleted has worked, change category, image, title and content.
+    * Create like, check it's info and data as well as removed that like.
+    * Create bookmark and remove bookmark with correct data stored.
+    * Ensure that bookmarks fetch the correct owner data and post data
+
 # Technologies Used
 
 ## Languages
