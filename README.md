@@ -166,6 +166,9 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 * Classes and functions are inspired of the project and additionally I have implemented my own two models.
 * The Profiles and Posts models have been customized so they matched my project idea. Additionally I've added a bookmark model and contact model with views and serializers too.
 * Excellent mentorship by Martina Terlevic in advising me and assisting me with tips on how to get through the project efficiently. Great communication and provided resources.
+* For writing the readme I took inspiration from the following projects:
+    * [LINK](https://github.com/CluelessBiker/project5-drf-api#validator-testing)
+    * [LINK](https://github.com/cornishcoder1/pp5-backend-DRF-the-winding-path)
 
 ## Media
 
