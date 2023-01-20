@@ -43,6 +43,7 @@ Within the readme documentation of the Front-end you can have an insight of a de
 ![database schema](assets/screenshots/database_schema.png)
 
 # Testing
+Running the pep8 validator extension within gitpod showed a number of errors and warnings. Among these where trailing white spaces, missed smicolons and new line after end of code errors.
 
 ## Validators
 
