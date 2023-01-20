@@ -25,7 +25,6 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
     - [Modules](#modules)
     - [Languages](#languages)
     - [Libraries, Frameworks & Programs](#libraries-frameworks-&-programs)
-    - [Frameworks](#frameworks)
 - [Deployment](#deployment)
     - [JSON Webtokens](#json-webtokens)
     - [Prepare API for deployment](#prepare-api-for-deployment)
