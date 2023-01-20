@@ -93,6 +93,16 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 ![installed app in settings file](assets/screenshots/installed_apps_settings.png)
 
+10. Import database to settings.py file and the env.py file when working in DEV environment.
+
+![import_database](assets/screenshots/import_database_and_env.png)
+
+11. Set cloudinary storage and add the following variable into the statement.
+
+![import_database](assets/screenshots/cloudinary_storage_settings.png)
+
+12. 
+
 ## JSON Webtokens
 
 ## Prepare API for deployment
