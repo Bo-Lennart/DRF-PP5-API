@@ -60,8 +60,13 @@ Within the readme documentation of the Front-end you can have an insight of a de
 * Python
 
 ## Libraries, Frameworks & Programs
-
-## Frameworks
+* Django
+* DRF (Django Rest Framework)
+* Django Rest Auth
+* PostgreSQL
+* Cors Headers
+* Cloudinary
+* Pillow
 
 # Deployment
 
