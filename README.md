@@ -73,6 +73,8 @@ Within the readme documentation of the Front-end you can have an insight of a de
 3. Via the resources tab on heroku, add postgres.
 4. Start GitPod and install the packages you desire. For me I ran the following via the "pip install" command: 
 
+![requirements.txt file](assets/screenshots/pip_packages.png)
+
 ## JSON Webtokens
 
 ## Prepare API for deployment
