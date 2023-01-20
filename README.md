@@ -122,7 +122,20 @@ Within the readme documentation of the Front-end you can have an insight of a de
 
 18. Set allowed hosts to your Heroku app and local:
 
-![set jwt auth](assets/screenshots/allowed_hosts.png)
+![allowed hosts](assets/screenshots/allowed_hosts.png)
+
+19. Below the ALLOWED_HOST, add the CORS_ALLOWED variable (following the DRF_API Walkthrough by C.I)
+
+![client origin](assets/screenshots/client_origin.png)
+
+20. At the top of the MIDDLEWARE add:
+
+![middleware](assets/screenshots/middleware_cors.png)
+
+21. Create the Procfile in order to make Heroka run the following upon deployment release.
+
+![procfile](assets/screenshots/procfile.png)
+
 
 ## JSON Webtokens
 
