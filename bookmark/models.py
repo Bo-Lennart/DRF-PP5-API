@@ -9,7 +9,11 @@ class Bookmark(models.Model):
     'unique_together' = a user can't bookmark the same post several time.
     """
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(BlogPost, related_name='bookmark', on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        BlogPost,
+        related_name='bookmark',
+        on_delete=models.CASCADE
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

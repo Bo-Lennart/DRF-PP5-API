@@ -5,6 +5,6 @@ from rest_framework.views import APIView
 from rest_framework import generics
 
 
-class ContactDetail(generics.ListCreateAPIView):   
+class ContactDetail(generics.ListCreateAPIView):
     serializer_class = ContactSerializers
     queryset = Contact.objects.all()

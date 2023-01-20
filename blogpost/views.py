@@ -22,7 +22,6 @@ class BlogPostList(generics.ListCreateAPIView):
         'likes__created_at',
     ]
 
-    
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
@@ -43,9 +42,10 @@ class BlogPostList(generics.ListCreateAPIView):
         return Response(
             serializer.errors, status=status.HTTP_400_BAD_REQUEST
         )
-    
+
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
 
 class BlogPostDetail(generics.RetrieveUpdateDestroyAPIView):
     """

@@ -9,7 +9,11 @@ class Like(models.Model):
     'unique_together' = a user can't like the same post twice.
     """
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(BlogPost, related_name='likes', on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        BlogPost,
+        related_name='likes',
+        on_delete=models.CASCADE
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

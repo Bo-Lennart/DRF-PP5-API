@@ -51,6 +51,6 @@ class BlogPostSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'category', 'owner', 'is_owner', 'profile_id',
             'profile_image', 'created_at', 'updated_at',
-            'title', 'content', 'image', 'like_id', 'bookmark_id', 
+            'title', 'content', 'image', 'like_id', 'bookmark_id',
             'likes_count', 'bookmarks_count',
         ]
