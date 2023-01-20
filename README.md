@@ -20,7 +20,7 @@ If anyone needs to get in touch with the admin, they can fill out the contact fo
 - [Database Schema](#database-schema)
 - [Testing](#Testing)
     - [Validators](#validators)
-    - [Bugs](#bugs)
+    - [Manual Testing](#manual-testing)
 - [Technologies used](#technologies-used)
     - [Languages](#languages)
     - [Libraries, Frameworks & Programs](#libraries-frameworks-&-programs)
@@ -43,11 +43,14 @@ Within the readme documentation of the Front-end you can have an insight of a de
 ![database schema](assets/screenshots/database_schema.png)
 
 # Testing
-Running the pep8 validator extension within gitpod showed a number of errors and warnings. Among these where trailing white spaces, missed smicolons and new line after end of code errors.
 
 ## Validators
 
-## Bugs
+Running the pep8 validator extension within gitpod showed a number of errors and warnings. Among these where trailing white spaces, missed smicolons and new line after end of code errors. All of these have been resolved and the only warnings left are the ones shown in the settings.py file and .gitpod.yml file.
+
+![database schema](assets/screenshots/pep8.png)
+
+## Manual Testing
 
 # Technologies Used
 
