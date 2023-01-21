@@ -62,6 +62,10 @@ Running the pep8 validator extension within gitpod showed a number of errors and
 * Ensure that bookmarks fetch the correct owner data and post data is stored.
 
 ## Bugs
+* On the final deployment, I realized that the admin page does not render the static files. Ger Tobin, a mentor contacted through student support, helped me out, checked the code and told me to use cloudinary for storing the static files. This resolved the bug/error.
+
+![static_files_error](assets/screenshots/static_files_error.png)
+
 * During the testing phase of the API I have not come across any bugs. However, I'm humbled by the fact that there could be functionalities that I have not tested, but all user stories and C.R.U.D features worked by the time I tested them.
 
 * When I built the API a lot of bugs happened because of type errors and simply because I had misunderstood things from the code along project. Through google and online tutorials on youtube I managed to build a better understanding and find my way through the bugs.
