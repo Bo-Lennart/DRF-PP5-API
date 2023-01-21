@@ -120,6 +120,15 @@ else:
 
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+# suggested additions (all three) by Johan :
+CORS_ALLOW_HEADERS = list(default_headers)
+CORS_ALLOW_METHODS = list(default_methods)
+CSRF_TRUSTED_ORIGINS = [os.environ.get(
+    'CLIENT_ORIGIN_DEV', 'CLIENT_ORIGIN',
+)]
+
 ROOT_URLCONF = 'drf_pp5_api.urls'
 
 TEMPLATES = [
