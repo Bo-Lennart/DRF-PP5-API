@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from django.conf import settings
 
 import os
 import dj_database_url
@@ -120,15 +121,6 @@ else:
 
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOW_ALL_ORIGINS = True
-
-# suggested additions (all three) by Johan :
-CORS_ALLOW_HEADERS = list(default_headers)
-CORS_ALLOW_METHODS = list(default_methods)
-CSRF_TRUSTED_ORIGINS = [os.environ.get(
-    'CLIENT_ORIGIN_DEV', 'CLIENT_ORIGIN',
-)]
-
 ROOT_URLCONF = 'drf_pp5_api.urls'
 
 TEMPLATES = [
@@ -203,6 +195,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = (os.path.join(SITE_ROOT, 'static_files/'))
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+STATICFILES_DIRS = (
+  os.path.join(SITE_ROOT, 'static/'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
